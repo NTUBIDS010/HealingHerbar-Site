@@ -162,7 +162,7 @@ function askNextQuestion() {
 async function sendToAI(userResponses) {
     const userId = getUserId();
     try {
-        const response = await fetch("https://healingherbar-api.onrender.com/analyze", {
+        const response = await fetch("https://healingherbar-site.onrender.com/analyze", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ user_id: userId, responses: userResponses })
@@ -194,7 +194,7 @@ async function sendToGPT(userInput) {
     sendButton.textContent = "請稍候..."; // 改變按鈕文字，提示使用者
 
     try {
-        const response = await fetch("https://healingherbar-api.onrender.com/analyze", {
+        const response = await fetch("https://healingherbar-site.onrender.com/analyze", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ user_id: userId, message: userInput })
