@@ -1,0 +1,33 @@
+測試 Flask API
+1️⃣ 打開終端機
+
+cd C:\IDS010\withShi\tea\meTEA
+python server.py
+
+2️⃣ 如果成功，應該會顯示
+
+Running on http://127.0.0.1:5000/
+
+您的目前 IP 位址 ( 124.109.123.144 )
+11266001
+KFiab57dmXsw6Arx
+mongodb+srv://11266001:KFiab57dmXsw6Arx@cluster0.b3q6l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+
+mpfJy2ne5SDw33V5
+MONGO_URI=mongodb+srv://TeaDB:mpfJy2ne5SDw33V5@cluster0.b3q6l.mongodb.net/HealingHerbar?retryWrites=true&w=majority
+
+
+
+
+
+或是和安爺爺聊天使用語音🎙️或打字輸入⌨️
+我最近睡不好 我想要提神 請推薦養生茶
+以上這四個按鈕按下去顯示index.html:37 Uncaught ReferenceError: handleUserInput is not defined
+    at HTMLButtonElement.onclick (index.html:37:61)
+onclick @ index.html:37Understand this errorAI
+index.html:38 Uncaught ReferenceError: handleUserInput is not defined
+    at HTMLButtonElement.onclick (index.html:38:60)
+onclick @ index.html:38Understand this errorAI
+index.html:39 Uncaught ReferenceError: handleUserInput is not defined
+    at HTMLButtonElement.onclick (index.html:39:61)沒有任何反應，我最近睡不好 我想要提神 請推薦養生茶這三個按鈕按下去後，應該要更新到<input type="text" id="user-input" placeholder="請輸入您的需求">裡面

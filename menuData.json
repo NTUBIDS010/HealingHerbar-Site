@@ -1,0 +1,154 @@
+[
+    {
+        "name": "青草茶 (Mesona Mint Tea)",
+        "price": "$55 / $100",
+        "category": "古法 Traditional",
+        "sweetness": "1~10分糖 / 無糖 / 微糖 / 半糖",
+        "ice": "去冰 / 少冰 / 溫 / 熱",
+        "description":"經典本店招牌青草茶"
+    },
+    {
+        "name": "苦茶 (Bitter Tea)",
+        "price": "$68 / $118",
+        "category": "古法 Traditional",
+        "sweetness": "無糖",
+        "ice": "去冰 / 少冰 / 溫 / 熱",
+        "description":"苦茶"
+    },
+    {
+        "name": "菁萃茶 (Cold Brew Tea)",
+        "price": "$100",
+        "category": "古法 Traditional",
+        "sweetness": "1~10分糖 / 無糖 / 微糖 / 半糖",
+        "ice": "冷飲",
+        "description":"菁萃茶"
+    },
+    {
+        "name": "青草鮮奶茶 (Herbal Milk Tea)",
+        "price": "$68 / $130",
+        "category": "古法 Traditional",
+        "sweetness": "1~10分糖 / 無糖 / 微糖 / 半糖",
+        "ice": "去冰 / 少冰 / 溫 / 熱",
+        "description":"青草鮮+奶茶"
+    },
+    {
+        "name": "洛神烏梅釀 (Roselle Ume Tea)",
+        "price": "$68 / $130",
+        "category": "古法 Traditional",
+        "sweetness": "1~10分糖 / 無糖 / 微糖 / 半糖",
+        "ice": "去冰 / 少冰 / 溫 / 熱",
+        "description":"洛神花+烏梅+蜂蜜"
+    },
+    {
+        "name": "蜂蜜蘆薈飲 (Honey Aloe)",
+        "price": "$68 / $130",
+        "category": "果萃 Fruit",
+        "sweetness": "1~10分糖 / 無糖 / 微糖 / 半糖",
+        "ice": "去冰 / 少冰 / 溫 / 熱",
+        "description":"蜂蜜+蘆薈"
+    },
+    {
+        "name": "青草西西里 (Lemon Herbal Tea)",
+        "price": "$129",
+        "category": "果萃 Fruit",
+        "description": "檸檬青草茶 + 蜂蜜",
+        "sweetness": "固定甜度",
+        "ice": "冷飲"
+    },
+    {
+        "name": "鳳梨白鶴冰茶 (Pineapple Herbal Tea)",
+        "price": "$129",
+        "category": "果萃 Fruit",
+        "description": "鳳梨元氣茶 + 龍眼蜜",
+        "sweetness": "固定甜度",
+        "ice": "冷飲"
+    },
+    {
+        "name": "客製手沖草本茶 (Customized Healing Tea)",
+        "price": "$200",
+        "category": "客製手沖 Customize",
+        "description": "根據顧客生活型態調整手沖草本茶",
+        "sweetness": "依配方客製",
+        "ice": "依配方客製"
+    },
+    {
+        "name": "客製茶包 (Customized Tea Bags)",
+        "price": "$400 (7天份)",
+        "category": "客製手沖 Customize",
+        "description": "根據需求提供 7 天份茶包",
+        "sweetness": "無糖",
+        "ice": "熱泡"
+    },
+    {
+        "name": "元氣百倍茶",
+        "price": "$120",
+        "category": "茶萃 Tea Bag",
+        "description": "適合夜貓族",
+        "sweetness": "無糖",
+        "ice": "熱泡"
+    },
+    {
+        "name": "神清氣爽茶",
+        "price": "$120",
+        "category": "茶萃 Tea Bag",
+        "description": "適合疲憊的上班族",
+        "sweetness": "無糖",
+        "ice": "熱泡"
+    },
+    {
+        "name": "烏蕨苦茶",
+        "price": "$120",
+        "category": "茶萃 Tea Bag",
+        "description": "適合火氣大、容易燥熱者",
+        "sweetness": "無糖",
+        "ice": "熱泡"
+    },
+    {
+        "name": "崗梅青草茶",
+        "price": "$120",
+        "category": "茶萃 Tea Bag",
+        "description": "消暑解熱",
+        "sweetness": "無糖",
+        "ice": "熱泡"
+    },
+    {
+        "name": "去油存菁茶",
+        "price": "$120",
+        "category": "茶萃 Tea Bag",
+        "description": "適合少動多餐、無肉不歡的外食族",
+        "sweetness": "無糖",
+        "ice": "熱泡"
+    },
+    {
+        "name": "地錦板藍茶",
+        "price": "$120",
+        "category": "茶萃 Tea Bag",
+        "description": "適合季節交替時，容易受寒者",
+        "sweetness": "無糖",
+        "ice": "熱泡"
+    },
+    {
+        "name": "男神 (Old Fashioned)",
+        "price": "$300",
+        "category": "草醉 Cocktail",
+        "description": "青草茶 + 威士忌 + 龍眼蜜",
+        "sweetness": "固定甜度",
+        "ice": "冷飲"
+    },
+    {
+        "name": "女神 (Aphrodite)",
+        "price": "$320",
+        "category": "草醉 Cocktail",
+        "description": "青草茶 + 貝禮詩奶酒 + 龍眼蜜",
+        "sweetness": "固定甜度",
+        "ice": "冷飲"
+    },
+    {
+        "name": "First Love",
+        "price": "$280",
+        "category": "草醉 Cocktail",
+        "description": "洛神烏梅 + 伏特加 + 氣泡水 + 龍眼蜜",
+        "sweetness": "固定甜度",
+        "ice": "冷飲"
+    }
+]

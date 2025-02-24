@@ -1,0 +1,56 @@
+📌 具體步驟（完全免費方案）
+🔹 1. 設定 GitHub Pages（前端）
+在 GitHub 創建 新倉庫（如 healingherbar-frontend）。
+
+將前端程式碼（HTML / CSS / JS）上傳到倉庫。
+
+啟用 GitHub Pages：
+
+進入 Settings → Pages
+選擇 Deploy from branch → main
+你將獲得 https://yourname.github.io/healingherbar-frontend
+可選：同步到 Cloudflare Pages，加速全球訪問。
+
+🔹 2. 設定 Render（後端 API）
+在 GitHub 創建後端倉庫（如 healingherbar-api）。
+將後端 API 上傳（Node.js / Express / Flask / PHP）。
+在 Render 註冊帳號（用 GitHub 教育版登入，獲得 $20 免額度）。
+創建新 Web Service，連接 GitHub 倉庫：
+選擇你的 healingherbar-api
+選擇 Node.js（或 Python、PHP）
+部署後，你會獲得 API 網址（如 https://healingherbar-api.onrender.com）
+🔹 3. 設定 MongoDB Atlas（儲存配方與使用者紀錄）
+註冊 MongoDB Atlas（GitHub 教育版可用 免費 5GB 方案）。
+創建 免費資料庫，選擇 M0 Shared Cluster。
+在你的後端 API 內連接 MongoDB：
+javascript
+複製
+編輯
+const mongoose = require('mongoose');
+mongoose.connect('YOUR_MONGO_URI', { useNewUrlParser: true, useUnifiedTopology: true });
+🔹 4. 註冊免費自訂網域
+進入 Namecheap，註冊 healingherbar.me（GitHub 教育版第一年免費）。
+或者 使用 Cloudflare Registrar 註冊 .com，只要 $8.57。
+將網域綁定 GitHub Pages 或 Cloudflare Pages：
+GitHub Pages → 在 Settings 設定 Custom Domain
+Cloudflare Pages → 使用 Cloudflare DNS 綁定自訂域名
+📌 最終的架構
+層級	方案	是否免費	是否來自 GitHub 教育版
+前端	GitHub Pages + Cloudflare Pages	✅ 免費	✅ 是
+後端	Render（$20 免額度）	✅ 免費	✅ 是
+資料庫	MongoDB Atlas（5GB）	✅ 免費	✅ 是
+AI 處理	OpenAI GPT API（需 API Key）	❌ 需 API Key	❌ 不是
+自訂網域	Namecheap .me（免費一年）	✅ 免費	✅ 是
+CDN & 安全性	Cloudflare Pro（免費）	✅ 免費	✅ 是
+📌 為什麼這是最適合你的方案？
+✅ 完全免費，不需要 VPS ✅ GitHub Pages 託管前端，無限免費流量 ✅ Render 運行後端 API，GitHub 教育版提供 $20 ✅ MongoDB Atlas 免費 5GB 儲存 ✅ Namecheap 免費 .me 網域 ✅ Cloudflare 提供免費 CDN 加速 ✅ 所有服務可無限期運行，不會自動關閉
+
+📌 下一步行動
+🚀 1. 設定 GitHub Pages（前端網站）
+🚀 2. 設定 Render API（後端，獲得免費 $20）
+🚀 3. 設定 MongoDB Atlas（儲存配方）
+🚀 4. 註冊 Namecheap .me（免費網域）
+🚀 5. 測試與部署，開放使用！
+
+
+🌿 歡迎來到老濟安 Healing Herbar！我是安爺爺，你的 AI 草本茶顧問。為了讓我們一起喝茶的時候，是最適合於你的茶飲，待會請盡量回答我的問題囉！我會推薦適合的茶飲 🍵 給你！🌿 Welcome to Healing Herbar! I’m Grandpa An, your AI herbal tea advisor. To find the perfect tea for you, please answer my questions carefully! 🍵 I’ll recommend the best tea for you!

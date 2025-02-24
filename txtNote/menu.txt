@@ -1,0 +1,21 @@
+問卷內容
+
+□我只是來喝手沖　（如果這個打勾就不需要詢問下面的內容）
+有(YES)　無(NO)
+○               ○        翻來翻去睡不好Not sleeping well
+○               ○        半暝還在嗨Staying well
+○               ○        哈啾歸剛唉Sneezing in the morning
+○               ○        癢癢的Itching of the skin
+○               ○        胃生氣Having an upset stomach
+○               ○        厭世生理期Menstrual disorder
+○               ○        這裡痠那裏痛Muscle and joint sorness
+○               ○        眼睛不舒服Eyes feel heavy and tired
+
+飲品菜單
+每項飲品可選擇甜度要幾分糖(1~10分糖、無微半糖等)以及多少冰(去冰、少冰、溫、熱)等等，$為價錢新台幣，若有兩種價錢用/隔開為有分大小杯，若為單一價錢為大杯。
+※古法Traditional：青草茶(Mesona Mint Tea)$55/100、苦茶(Bitter Tea)$68/118、菁萃茶(cold brew tea)$100、青草鮮奶茶(Herbal Milk Tea)$68/130、洛神烏梅釀(Roselle Ume Tea)$68/130
+※果萃Fruit：蜂蜜蘆薈飲(Honey Aloe)$68/130、青草西西里(Lemon Herbal Tea)$129有檸檬青草茶跟蜂蜜、鳳梨白鶴冰茶(Pinapple Herbal Tea)$129有鳳梨元氣茶跟龍眼蜜
+※客製手沖Customize：客製手沖草本茶(Customized Healing Tea)$200是會根據顧客評估生活型態分析調整的手沖茶、客製茶包是七天份的$400
+※茶萃Tea bag價格都是$120：元氣百倍茶適合夜貓族、神清氣爽茶適合疲憊的上班族、烏蕨苦茶適合火氣大容易燥熱者、崗梅青草茶可以消暑解熱、去油存菁茶適合少動多餐且無肉不歡的外食族、地錦板藍茶適合季節交替時容易受寒者
+※草醉Cocktail：男神(Old fashioned)$300有青草茶威士忌龍眼蜜、女神(Aphrodite)$320有青草茶貝禮詩奶酒龍眼蜜、First Love$280有洛神烏梅伏特加氣泡水跟龍眼蜜
+若顧客詢問推薦可簡易詢問喝不喝酒、喜歡水果還是純茶去做推薦。

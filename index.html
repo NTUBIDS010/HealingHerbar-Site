@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安爺爺與你有約_老濟安 Healing Herbar </title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="PIUCTURE/老濟安LOGO_去背.svg" alt="老濟安 LOGO" class="logo">
+    </div>
+    
+<div class="mascot-container">
+    <img src="PIUCTURE/安爺爺_喝茶.svg" alt="Healing Herbar 吉祥物" class="mascot">
+</div>
+    <!-- 互動區塊 -->
+    <div class="chat-container">
+        <h2>老濟安 AI 互動顧問_安爺爺</h2>
+        <div id="gpt-response" class="chat-box">
+            你好，我是老濟安的 AI 茶飲顧問，請告訴我你的需求，我會推薦適合你的茶飲！
+        </div>
+<!-- 問卷按鈕區域 -->
+<div class="button-container"></div>
+
+
+        <!-- 分隔線 -->
+        <div class="separator"></div>
+
+        <!-- 使用者輸入區塊 -->
+        <div class="chat-options">
+            <h3>與安爺爺聊天</h3>
+            <p>你可以打字輸入 ⌨️或透過手機鍵盤內建語音 🎙️ 來與安爺爺互動！</p>
+
+            <div class="quick-options">
+                <button onclick="handleQuickOption('老濟安')">老濟安</button>
+                <button onclick="handleQuickOption('推薦的這個茶好喝嗎')">推薦的這個茶好喝嗎</button>
+                <button onclick="handleQuickOption('請推薦老濟安菜單飲品')">請推薦老濟安菜單飲品</button>
+            </div>            
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="請輸入您的需求">
+                <button id="send">送出</button>
+            </div>
+            <p>記得按下送出按鈕待安爺爺回應哦！</p>
+        </div>
+    </div>
+
+    <script type="module" src="menuData.js"></script>
+    <script type="module" src="voiceAssistant.js"></script>
+    <script>
+        function handleQuickOption(text) {
+        const userInput = document.getElementById("user-input");
+
+        userInput.placeholder = text; // 更新 placeholder
+        userInput.value = text; // 自動填入輸入框
+        }       
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <footer class="site-footer">
+        <p>國立臺北商業大學 資訊與決策科學研究所 林依麟研究生 架設</p>
+        <p>指導老師：楊東育教授、施智文教授</p>
+        <p>老濟安 Healing Herbar 活動宣傳</p>
+        <p>Copyright © <span id="year"></span> NTUB IDS 010. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
