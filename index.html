@@ -13,39 +13,42 @@
         <img src="PIUCTURE/老濟安LOGO_去背.svg" alt="老濟安 LOGO" class="logo">
     </div>
     
-<div class="mascot-container">
-    <img src="PIUCTURE/安爺爺_喝茶.svg" alt="Healing Herbar 吉祥物" class="mascot">
-</div>
+    <div class="container">
+        <!-- 吉祥物區塊 -->
+        <div class="mascot-container">
+            <img src="PIUCTURE/安爺爺_喝茶.svg" alt="Healing Herbar 吉祥物" class="mascot">
+        </div>
     <!-- 互動區塊 -->
     <div class="chat-container">
         <h2>老濟安 AI 互動顧問_安爺爺</h2>
         <div id="gpt-response" class="chat-box">
             你好，我是老濟安的 AI 顧問，請告訴我你的需求，我會推薦適合你的茶飲！
         </div>
-<!-- 問卷按鈕區域 -->
+
+<!-- 問卷按鈕 -->
 <div class="button-container"></div>
 
+<!-- 分隔線 -->
+<div class="separator"></div>
 
-        <!-- 分隔線 -->
-        <div class="separator"></div>
+<!-- 使用者輸入區塊 -->
+<div class="chat-options">
+    <h3>與安爺爺聊天</h3>
+    <p>你可以打字輸入 ⌨️ 或透過語音 🎙️ 與安爺爺互動！</p>
 
-        <!-- 使用者輸入區塊 -->
-        <div class="chat-options">
-            <h3>與安爺爺聊天</h3>
-            <p>你可以打字輸入 ⌨️或透過手機鍵盤內建語音 🎙️ 來與安爺爺互動！</p>
-
-            <div class="quick-options">
-                <button onclick="handleQuickOption('老濟安')">老濟安</button>
-                <button onclick="handleQuickOption('推薦的這個茶好喝嗎')">推薦的這個茶好喝嗎</button>
-                <button onclick="handleQuickOption('請推薦老濟安菜單飲品')">請推薦老濟安菜單飲品</button>
-            </div>            
-            <div class="input-container">
-                <input type="text" id="user-input" placeholder="請輸入您的需求">
-                <button id="send">送出</button>
-            </div>
-            <p>記得按下送出按鈕待安爺爺回應哦！</p>
-        </div>
+    <div class="quick-options">
+        <button onclick="handleQuickOption('老濟安')">老濟安</button>
+        <button onclick="handleQuickOption('推薦的這個茶好喝嗎')">推薦的這個茶好喝嗎</button>
+        <button onclick="handleQuickOption('營業時間與如何前往？')">營業時間與如何前往？</button>
     </div>
+
+    <div class="input-container">
+        <input type="text" id="user-input" placeholder="請輸入您的需求">
+        <button id="send">送出</button>
+    </div>
+</div>
+</div>
+</div>
 
     <script type="module" src="menuData.js"></script>
     <script type="module" src="voiceAssistant.js"></script>

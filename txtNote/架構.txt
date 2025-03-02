@@ -23,34 +23,51 @@
 註冊 MongoDB Atlas（GitHub 教育版可用 免費 5GB 方案）。
 創建 免費資料庫，選擇 M0 Shared Cluster。
 在你的後端 API 內連接 MongoDB：
-javascript
-複製
-編輯
+
 const mongoose = require('mongoose');
 mongoose.connect('YOUR_MONGO_URI', { useNewUrlParser: true, useUnifiedTopology: true });
-🔹 4. 註冊免費自訂網域
-進入 Namecheap，註冊 healingherbar.me（GitHub 教育版第一年免費）。
-或者 使用 Cloudflare Registrar 註冊 .com，只要 $8.57。
-將網域綁定 GitHub Pages 或 Cloudflare Pages：
-GitHub Pages → 在 Settings 設定 Custom Domain
-Cloudflare Pages → 使用 Cloudflare DNS 綁定自訂域名
-📌 最終的架構
-層級	方案	是否免費	是否來自 GitHub 教育版
-前端	GitHub Pages + Cloudflare Pages	✅ 免費	✅ 是
-後端	Render（$20 免額度）	✅ 免費	✅ 是
-資料庫	MongoDB Atlas（5GB）	✅ 免費	✅ 是
-AI 處理	OpenAI GPT API（需 API Key）	❌ 需 API Key	❌ 不是
-自訂網域	Namecheap .me（免費一年）	✅ 免費	✅ 是
-CDN & 安全性	Cloudflare Pro（免費）	✅ 免費	✅ 是
-📌 為什麼這是最適合你的方案？
-✅ 完全免費，不需要 VPS ✅ GitHub Pages 託管前端，無限免費流量 ✅ Render 運行後端 API，GitHub 教育版提供 $20 ✅ MongoDB Atlas 免費 5GB 儲存 ✅ Namecheap 免費 .me 網域 ✅ Cloudflare 提供免費 CDN 加速 ✅ 所有服務可無限期運行，不會自動關閉
 
-📌 下一步行動
-🚀 1. 設定 GitHub Pages（前端網站）
-🚀 2. 設定 Render API（後端，獲得免費 $20）
-🚀 3. 設定 MongoDB Atlas（儲存配方）
-🚀 4. 註冊 Namecheap .me（免費網域）
-🚀 5. 測試與部署，開放使用！
+🔹 4. 註冊免費自訂網域
+
+📌 最終的架構
+
+層級	方案
+前端	GitHub Pages + Cloudflare Pages	
+後端	Render
+資料庫	MongoDB Atlas（5GB）	
+AI 處理	OpenAI GPT API（有 API Key）	
+架在Github上 https://ntubids010.github.io/HealingHerbar-Site/
 
 
 🌿 歡迎來到老濟安 Healing Herbar！我是安爺爺，你的 AI 草本茶顧問。為了讓我們一起喝茶的時候，是最適合於你的茶飲，待會請盡量回答我的問題囉！我會推薦適合的茶飲 🍵 給你！🌿 Welcome to Healing Herbar! I’m Grandpa An, your AI herbal tea advisor. To find the perfect tea for you, please answer my questions carefully! 🍵 I’ll recommend the best tea for you!
+
+
+// 紀錄對話歷史的全域變數
+let conversationHistory = [
+    { role: "system", content: "你是一個叫做咖咖虎的虛擬點餐助理，代表《咖意哩》餐廳，負責顧客的點餐服務。\n" +
+        "顧客會透過語音點餐，並語音轉文字後傳達給您，所以有些詞彙會比較不精準，請自行理解顧客說的是哪道餐點。\n" +
+        "你的回答只能依據下列的菜單和品牌資訊來完成：\n" +
+        "- 單醬類別：唐揚雞丁咖哩150元、香酥雞柳咖哩150元、雪花牛咖哩150元、酥炸鮮魚咖哩170元、腰內肉咖哩180元、金黃豬排咖哩180元、精燉牛肉咖哩190元\n" +
+        "- 雙醬類別：唐揚雞丁雙醬咖哩160元、香酥雞柳雙醬咖哩160元、酥炸鮮魚雙醬咖哩180元、腰內肉雙醬咖哩元190、金黃豬排雙醬咖哩190元\n" +
+        "- 小菜類別：胡麻花椰菜45元、胡麻玉米筍55元、黃金脆薯50元、香酥雞塊50元、南瓜可樂餅55元\n" +
+        "- 飲料類別：可口可樂30元、雪碧30元、檸檬紅茶30元、蘋果汁30元\n" +
+        "在每一次協助點餐後，會需要告知以點餐的餐點有哪些，共計多少元。\n" +
+        "如果顧客點的菜單不在以上列表中，請推薦本咖意哩餐廳的餐點。\n" +
+        "回應都需要是繁體中文\n" +
+        "如果顧客詢問和點餐無關的問題，請回答：「不好意思，我無法協助您。」\n"  }
+];
+
+// 使用 fetch 調用 OpenAI API
+function sendToGPT(userInput) {
+    const apiUrl = "/VoiceOrder/gpt_proxy.php"; // 使用後端代理伺服器的 URL
+
+    // 將用戶的輸入添加到對話歷史
+    conversationHistory.push({ role: "user", content: userInput });
+
+    // 傳遞到後端的數據
+    const payload = {
+        model: "gpt-4-turbo",
+        messages: conversationHistory,
+        max_tokens: 150,
+        temperature: 0.7
+    };

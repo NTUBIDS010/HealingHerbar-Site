@@ -19,15 +19,13 @@ MONGO_URI=mongodb+srv://TeaDB:mpfJy2ne5SDw33V5@cluster0.b3q6l.mongodb.net/Healin
 
 
 
+換版
 
+cd C:\IDS010\withShi\tea\meTEA
+git status
 
-或是和安爺爺聊天使用語音🎙️或打字輸入⌨️
-我最近睡不好 我想要提神 請推薦養生茶
-以上這四個按鈕按下去顯示index.html:37 Uncaught ReferenceError: handleUserInput is not defined
-    at HTMLButtonElement.onclick (index.html:37:61)
-onclick @ index.html:37Understand this errorAI
-index.html:38 Uncaught ReferenceError: handleUserInput is not defined
-    at HTMLButtonElement.onclick (index.html:38:60)
-onclick @ index.html:38Understand this errorAI
-index.html:39 Uncaught ReferenceError: handleUserInput is not defined
-    at HTMLButtonElement.onclick (index.html:39:61)沒有任何反應，我最近睡不好 我想要提神 請推薦養生茶這三個按鈕按下去後，應該要更新到<input type="text" id="user-input" placeholder="請輸入您的需求">裡面
+git add .
+git commit -m "更新 Healing Herbar 網站：修正問卷互動與 AI 飲品推薦"
+git push origin main
+
+到Render點擊 Manual Deploy 或 Restart

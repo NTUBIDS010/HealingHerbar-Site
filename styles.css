@@ -5,6 +5,18 @@ body {
     color: #333;
 }
 
+/* ✅ 讓主容器能適應不同設備 */
+.container {
+    display: flex;
+    flex-direction: column; /* 預設手機版為直排 */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* 吉祥物圖片設定 */
 .mascot-container {
     position: relative;
@@ -13,9 +25,11 @@ body {
     align-items: center;
     margin-bottom: -120px; /* 讓吉祥物上半身進入對話框 */
     z-index: 1; /* 設定在最底層 */
+    margin-bottom: 20px;
 }
 .mascot {
-    width: 500px; /* 設定圖片大小 */
+    width: 80%;
+    max-width: 500px; /* 在桌機時可放大 */
     height: auto;
     animation: float 5s infinite alternate ease-in-out;
 }
@@ -30,7 +44,7 @@ body {
 
 /* 對話框 chat-container（確保它在上層） */
 .chat-container {
-    width: 90%;
+    width: 100%;
     max-width: 500px;
     background: white;
     margin: 0 auto;
@@ -86,9 +100,10 @@ button:hover {
 }
 
 .button-container {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     margin-top: 20px;
 }
 
@@ -124,12 +139,13 @@ button:hover {
     box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
 }
 
-/* 讓輸入框在頁面中央對齊 */
+/* ✅ 輸入框 */
 .input-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    flex-direction: column; /* 預設直向排列 */
 }
 
 /* 分隔線 */
@@ -190,4 +206,60 @@ button:hover {
     padding: 10px;
     margin-top: 20px;
     border-top: 1px solid #ddd;
+}
+
+/* ✅ RWD - 平板版 */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* 平板以上改為橫向排列 */
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .mascot {
+        max-width: 350px;
+    }
+
+    .chat-container {
+        max-width: 500px;
+    }
+
+    .input-container {
+        flex-direction: row; /* 讓輸入框與按鈕並排 */
+        justify-content: center;
+    }
+}
+
+/* ✅ RWD - 桌機版 */
+@media (min-width: 1025px) {
+    .mascot {
+        max-width: 500px;
+    }
+
+    .chat-container {
+        max-width: 600px;
+    }
+}
+
+/* ✅ 手機版調整 */
+@media (max-width: 767px) {
+    .button-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #user-input {
+        width: 95%;
+    }
+
+    #send {
+        width: 100%;
+        padding: 14px;
+        font-size: 18px;
+    }
 }
