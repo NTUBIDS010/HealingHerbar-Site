@@ -12,9 +12,11 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100vw;
     margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* 吉祥物圖片設定 */
@@ -221,7 +223,9 @@ button:hover {
     }
 
     .chat-container {
-        max-width: 500px;
+        width: 95%;
+        max-width: 95%;
+        padding: 15px;
     }
 
     .input-container {
@@ -243,6 +247,10 @@ button:hover {
 
 /* ✅ 手機版調整 */
 @media (max-width: 767px) {
+    .mascot {
+        width: 60%; /* 降低寬度，避免擠壓對話框 */
+        max-width: 300px;
+    }
     .button-container {
         flex-direction: column;
         gap: 5px;
@@ -252,9 +260,14 @@ button:hover {
         flex-direction: column;
         width: 100%;
     }
-
-    #user-input {
+    .chat-container {
         width: 95%;
+        max-width: 95%;
+        padding: 15px;
+    }
+    #user-input {
+        width: 90%;
+        max-width: 300px;
     }
 
     #send {
@@ -262,4 +275,20 @@ button:hover {
         padding: 14px;
         font-size: 18px;
     }
+    .quick-options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .quick-options button {
+        font-size: 14px;
+        padding: 8px;
+        flex: 1 1 45%; /* 讓按鈕佔據 45% 寬度，自動換行 */
+        max-width: 140px;
+    }
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
